@@ -1,0 +1,26 @@
+###
+POST http://localhost:8000/livros/
+Content-Type: application/json
+
+{
+  "id":"5",
+  "nome": "O novo livro mais legal do mundo"
+}
+
+###
+GET http://localhost:8000/livros/
+
+###
+GET http://localhost:8000/livros/5
+
+###
+PATCH  http://localhost:8000/livros/5
+Content-Type: application/json
+
+{
+  "nome": "O livro não novo mais legal do mundo"
+}
+
+###
+DELETE  http://localhost:8000/livros/5
+
